@@ -4,6 +4,8 @@ Title: Contacte
 Post Type: salepoint
 Order: 20
 */
+
+
 piklist('field', array(
   'type' => 'group'
   ,'label' => __('Address', 'xarxeta-marketgardens')
@@ -13,18 +15,37 @@ piklist('field', array(
       'type' => 'text'
       ,'field' => 'sp_street'
       ,'label' => __('Street Address', 'xarxeta-marketgardens')
-      ,'columns' => 12
+      ,'columns' => 10
     )
     ,array(
       'type' => 'text'
       ,'field' => 'sp_pobox'
       ,'label' => __('PO Box, Suite, etc.', 'xarxeta-marketgardens')
-      ,'columns' => 12
+      ,'columns' => 2
     )
+    // ,array(
+    //   'type' => 'text'
+    //   ,'field' => 'sp_city'
+    //   ,'label' => __('City', 'xarxeta-marketgardens')
+    //   ,'columns' => 5
+    // )
     ,array(
-      'type' => 'text'
-      ,'field' => 'sp_city'
+      'type' => 'select'
+      ,'scope' => 'taxonomy'
+      ,'field' => 'category'
       ,'label' => __('City', 'xarxeta-marketgardens')
+      ,'choices' => array(
+          '' => __('Choose city', 'xarxeta-marketgardens')
+        )
+        + piklist(get_terms(array(
+          'taxonomy' => 'sp-city-tax'
+          ,'hide_empty' => false
+        ))
+        ,array(
+          'term_id'
+          ,'name'
+        )
+      )
       ,'columns' => 5
     )
     ,array(
@@ -55,7 +76,7 @@ piklist('field', array(
       'type' => 'tel'
       ,'field' => 'sp_phone2'
       ,'label' => __('Secondary phone', 'xarxeta-marketgardens')
-      ,'columns' => 2
+      ,'columns' => 4
     )
     ,array(
       'type' => 'tel'

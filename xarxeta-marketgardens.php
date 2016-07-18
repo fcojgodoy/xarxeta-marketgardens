@@ -38,8 +38,8 @@ add_action( 'plugins_loaded', 'xm_load_plugin_textdomain' );
  * Registering Marketgarden CPT
  *
  */
- add_filter('piklist_post_types', 'marketgarden_post_type');
- function marketgarden_post_type($post_types)
+add_filter('piklist_post_types', 'marketgarden_post_type');
+function marketgarden_post_type($post_types)
  {
   $post_types['marketgarden'] = array(
     'label' => __('Market gardens', 'xarxeta-marketgardens')
@@ -55,16 +55,18 @@ add_action( 'plugins_loaded', 'xm_load_plugin_textdomain' );
       ,'revisions'
       ,'thumbnail'
     )
-    ,'hide_meta_box' => array(
-      'slug'
-      ,'author'
-      ,'revisions'
-      ,'comments'
-      ,'commentstatus'
-    )
+    // ,'hide_meta_box' => array(
+    //   'slug'
+    //   ,'author'
+    //   ,'revisions'
+    //   ,'comments'
+    //   ,'commentstatus'
+    // )
   );
-return $post_types;
+
+  return $post_types;
 }
+
 
 /*
  * Registering Salepoint CPT
@@ -86,38 +88,50 @@ return $post_types;
       ,'author'
       ,'revisions'
     )
-    ,'hide_meta_box' => array(
-      'slug'
-      ,'author'
-      ,'comments'
-      ,'commentstatus'
-    )
+    // ,'hide_meta_box' => array(
+    //   'slug'
+    //   ,'author'
+    //   ,'comments'
+    //   ,'commentstatus'
+    // )
   );
-return $post_types;
+
+  return $post_types;
+
 }
 
+add_action( 'init', 'create_sp_city_taxonomy' );
 
-/*
- * Registering Products taxonomy
- *
- */
-//  add_filter('piklist_taxonomies', 'products_tax');
-//  function products_tax($taxonomies)
-//  {
-//    $taxonomies[] = array(
-//       'post_type' => 'marketgarden'
-//       ,'name' => 'products_tax'
-//       ,'configuration' => array(
-//         'labels' => piklist('taxonomy_labels', 'Product')
-//         ,'hide_meta_box' => true
-//         ,'query_var' => true
-//         ,'rewrite' => array(
-//           'slug' => 'productes'
+function create_sp_city_taxonomy() {
+	register_taxonomy(
+		'sp-city-tax',
+		'salepoint',
+		array(
+			'label' => __( 'Cities' ),
+			'rewrite' => array( 'slug' => 'ciutats' ),
+			'hierarchical' => true,
+		)
+	);
+}
+
+//   add_filter('piklist_taxonomies', 'demo_type_tax');
+//   function demo_type_tax($taxonomies) {
+//      $taxonomies[] = array(
+//         'post_type' => 'salepoint'
+//         ,'name' => 'city'
+//         // ,'show_admin_column' => true
+//         ,'configuration' => array(
+//           'labels' => piklist('City', 'xarxeta-marketgardens')
+//           // 'hierarchical' => true
+//           // ,'hide_meta_box' => true
+//           // ,'show_ui' => true
+//           // ,'query_var' => true
+//           ,'rewrite' => array(
+//             'slug' => 'ciutats'
+//           )
 //         )
-//       )
-//     );
-// return $taxonomies;
+//       );
+//     return $taxonomies;
 // }
-
 
 ?>
