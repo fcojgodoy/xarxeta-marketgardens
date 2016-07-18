@@ -1,0 +1,35 @@
+<?php
+/*
+Title: Els pageses
+Post Type: marketgarden
+Order: 20
+Priority: default
+Context: side
+Collapse: false
+*/
+
+piklist('field', array(
+ 'type' => 'select'
+ ,'field' => 'my_users'
+ ,'label' => 'Choose a user'
+ ,'add_more' => true
+ ,'attributes' => array(
+   'class' => 'text'
+ )
+ ,'choices' => array(
+    '' => __('Choose User')
+  )
+  + piklist(
+   get_users(
+     array(
+      'orderby' => 'display_name'
+      ,'order' => 'asc'
+     )
+     ,'objects'
+   )
+   ,array(
+     'ID'
+     ,'display_name'
+   )
+  )
+));

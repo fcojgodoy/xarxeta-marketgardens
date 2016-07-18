@@ -1,0 +1,10 @@
+<?php
+/*
+Title: La nostra horta
+*/
+
+piklist('field', array(
+  'type' => 'text'
+  ,'field' => 'field_one'
+  ,'label' => 'First Field'
+));
