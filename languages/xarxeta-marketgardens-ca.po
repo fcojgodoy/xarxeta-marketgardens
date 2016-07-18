@@ -1,0 +1,236 @@
+# Copyright (C) 2016 Xarxeta Marketgardens
+# This file is distributed under the same license as the Xarxeta Marketgardens package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Xarxeta Marketgardens 0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/xarxeta-"
+"marketgardens\n"
+"POT-Creation-Date: 2016-06-27 22:44+0200\n"
+"PO-Revision-Date: 2016-06-27 22:49+0200\n"
+"Last-Translator: Fco. J. Godoy <francisco.godoy@openmailbox.org>\n"
+"Language-Team: \n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: xarxeta-marketgardens.php\n"
+"X-Poedit-SearchPath-2: parts/meta-boxes\n"
+"X-Poedit-SearchPath-3: parts\n"
+
+#: parts/meta-boxes/marketgarden-contact.php:9
+#: parts/meta-boxes/salepoint-contact.php:9
+msgid "Address"
+msgstr "Adreça"
+
+#: parts/meta-boxes/marketgarden-contact.php:10
+msgid "Enter your address"
+msgstr "Introdueix la teva adreça"
+
+#: parts/meta-boxes/marketgarden-contact.php:15
+#: parts/meta-boxes/salepoint-contact.php:15
+msgid "Street Address"
+msgstr "Carrer"
+
+#: parts/meta-boxes/marketgarden-contact.php:21
+#: parts/meta-boxes/salepoint-contact.php:21
+msgid "PO Box, Suite, etc."
+msgstr "Numero"
+
+#: parts/meta-boxes/marketgarden-contact.php:27
+#: parts/meta-boxes/salepoint-contact.php:27
+msgid "City"
+msgstr "Ciutat"
+
+#: parts/meta-boxes/marketgarden-contact.php:33
+#: parts/meta-boxes/salepoint-contact.php:33
+msgid "Region"
+msgstr "Regió"
+
+#: parts/meta-boxes/marketgarden-contact.php:44
+#: parts/meta-boxes/salepoint-contact.php:45
+msgid "Postal Code"
+msgstr "Codi postal"
+
+#: parts/meta-boxes/marketgarden-contact.php:50
+#: parts/meta-boxes/salepoint-contact.php:51
+msgid "Phone"
+msgstr "Telèfon"
+
+#: parts/meta-boxes/marketgarden-contact.php:56
+#: parts/meta-boxes/salepoint-contact.php:57
+msgid "Secondary phone"
+msgstr "Telèfon secundari"
+
+#: parts/meta-boxes/marketgarden-contact.php:62
+#: parts/meta-boxes/salepoint-contact.php:63
+msgid "Mobile"
+msgstr "Mòbil"
+
+#: parts/meta-boxes/marketgarden-contact.php:68
+msgid "Web"
+msgstr "Web"
+
+#: parts/meta-boxes/marketgarden-desc.php:11
+msgid "Subtitle/slogan"
+msgstr "Subtítol / eslógan"
+
+#: parts/meta-boxes/marketgarden-desc.php:12
+msgid "Enter a subtitle or slogan of the market garden"
+msgstr "Introdueix el subtitol o eslógan de la teva horta"
+
+#: parts/meta-boxes/marketgarden-desc.php:21
+msgid "Who we are"
+msgstr "Qui som"
+
+#: parts/meta-boxes/marketgarden-desc.php:22
+msgid "Enter a text about the people from the market garden"
+msgstr "Introdueix un text sobre les persones de l'hort"
+
+#: parts/meta-boxes/marketgarden-desc.php:39
+msgid "Where and since when?"
+msgstr "On i des de quan?"
+
+#: parts/meta-boxes/marketgarden-desc.php:40
+msgid "Enter a text about the place and the beginning of the market garden"
+msgstr "Introdueix un text sobre els començaments i el lloc"
+
+#: parts/meta-boxes/marketgarden-desc.php:57
+msgid "Description of the land"
+msgstr "Característiques de la finca"
+
+#: parts/meta-boxes/marketgarden-desc.php:58
+msgid "Enter a description for the market garden"
+msgstr "Introdueix una descripciò per la teva horta"
+
+#: parts/meta-boxes/marketgarden-desc.php:75
+msgid "Type of sales"
+msgstr "Tipus de venta"
+
+#: parts/meta-boxes/marketgarden-desc.php:76
+msgid "Enter a description of the type of sales of the market garden"
+msgstr "Introdueix un text sobre els tipus de venda"
+
+#: parts/meta-boxes/marketgarden-desc.php:93
+msgid "Peculiarities"
+msgstr "Alguna peculiaritat"
+
+#: parts/meta-boxes/marketgarden-desc.php:94
+msgid "Enter the peculiarities for the market garden"
+msgstr "Introdueix alguna peculiaritat sobre l'hort"
+
+#: parts/meta-boxes/marketgarden-salepoints.php:13
+msgid "Sale point"
+msgstr "Punt de venda"
+
+#: parts/meta-boxes/marketgarden-salepoints.php:14
+msgid "Enter the sale points of your market garden"
+msgstr "Introdueix els punts de venda de la teva horta"
+
+#: parts/meta-boxes/salepoint-contact.php:10
+msgid "The address of the point of sale"
+msgstr "L'adreça del punt de venda"
+
+#: parts/meta-boxes/salepoint-contact.php:39
+msgid "Another"
+msgstr "Altre"
+
+#: parts/meta-boxes/salepoint-desc.php:10
+msgid "Subtitle/Slogan"
+msgstr "Subtítol / eslógan"
+
+#: parts/meta-boxes/salepoint-desc.php:11
+msgid "Enter a subtitle or slogan for de sale point"
+msgstr "Introdueix el subtitol o eslógan de el punt de venda"
+
+#: parts/meta-boxes/salepoint-desc.php:20
+msgid "Description"
+msgstr "Descripciò"
+
+#: parts/meta-boxes/salepoint-desc.php:21
+msgid "Enter a description for the sale point"
+msgstr "Introdueix una descripciò per el punt de venda"
+
+#: parts/meta-boxes/salepoint-timetable.php:11
+msgid "Enter the start time"
+msgstr "Introdueix l'hora de inici"
+
+#: parts/meta-boxes/salepoint-timetable.php:16
+msgid "Enter the end time"
+msgstr "Introdueix l'hora de plegada"
+
+#: parts/meta-boxes/salepoint-timetable.php:22
+msgid "Days of the week"
+msgstr "Dies de la semana"
+
+#: parts/meta-boxes/salepoint-timetable.php:26
+msgid "Monday"
+msgstr "Dilluns"
+
+#: parts/meta-boxes/salepoint-timetable.php:27
+msgid "Tuesday"
+msgstr "Dimarts"
+
+#: parts/meta-boxes/salepoint-timetable.php:28
+msgid "Wednesday"
+msgstr "Dimecres"
+
+#: parts/meta-boxes/salepoint-timetable.php:29
+msgid "Thursday"
+msgstr "Dijous"
+
+#: parts/meta-boxes/salepoint-timetable.php:30
+msgid "Friday"
+msgstr "Divendres"
+
+#: parts/meta-boxes/salepoint-timetable.php:31
+msgid "Saturday"
+msgstr "Disabte"
+
+#: parts/meta-boxes/salepoint-timetable.php:32
+msgid "Sunday"
+msgstr "Diumenge"
+
+#: parts/meta-boxes/salepoint-timetable.php:39
+msgid "Comment"
+msgstr "Comentari"
+
+#: parts/meta-boxes/salepoint-timetable.php:40
+msgid "Add any comment to the timetable."
+msgstr "Afegeix qualsevol comentari a l'horari"
+
+#: xarxeta-marketgardens.php:30
+msgid "Market gardens"
+msgstr "Hortes"
+
+#: xarxeta-marketgardens.php:62
+msgid "Sale points"
+msgstr "Punts de venda"
+
+#~ msgid "Our postal data"
+#~ msgstr "La adreça"
+
+#~ msgid "Enter a subtitle or slogan for de market garden"
+#~ msgstr "Introdueix el subtitol o eslógan de la teva horta"
+
+#~ msgid "Products"
+#~ msgstr "Productes"
+
+#~ msgid "Enter a subtitle or slogan of the sale point"
+#~ msgstr "Introdueix el subtitol o eslógan  del punt de venda"
+
+#~ msgid "Enter the products are selling in your market garden"
+#~ msgstr "Introdueix els productes que es venden en la teva horta"
+
+#~ msgid "Choose products"
+#~ msgstr "Tria els productes"
+
+#~ msgid "marketgardens"
+#~ msgstr "Hortas"
+
+#~ msgid "Create listings for market gardens or farms."
+#~ msgstr "Crea una llista de hortas o granges."
