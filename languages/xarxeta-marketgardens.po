@@ -1,0 +1,182 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Xarxeta Marketgardens\n"
+"POT-Creation-Date: 2016-06-17 10:42+0200\n"
+"PO-Revision-Date: 2016-06-17 10:43+0200\n"
+"Last-Translator: Fco. J. Godoy <francisco.godoy@openmailbox.org>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: parts/meta-boxes/marketgarden-contact.php:9
+#: parts/meta-boxes/salepoint-contact.php:9
+msgid "Address"
+msgstr ""
+
+#: parts/meta-boxes/marketgarden-contact.php:10
+msgid "Enter your address"
+msgstr ""
+
+#: parts/meta-boxes/marketgarden-contact.php:15
+#: parts/meta-boxes/salepoint-contact.php:15
+msgid "Street Address"
+msgstr ""
+
+#: parts/meta-boxes/marketgarden-contact.php:21
+#: parts/meta-boxes/salepoint-contact.php:21
+msgid "PO Box, Suite, etc."
+msgstr ""
+
+#: parts/meta-boxes/marketgarden-contact.php:27
+#: parts/meta-boxes/salepoint-contact.php:27
+msgid "City"
+msgstr ""
+
+#: parts/meta-boxes/marketgarden-contact.php:33
+#: parts/meta-boxes/salepoint-contact.php:33
+msgid "Region"
+msgstr ""
+
+#: parts/meta-boxes/marketgarden-contact.php:44
+#: parts/meta-boxes/salepoint-contact.php:45
+msgid "Postal Code"
+msgstr ""
+
+#: parts/meta-boxes/marketgarden-contact.php:50
+#: parts/meta-boxes/salepoint-contact.php:51
+msgid "Phone"
+msgstr ""
+
+#: parts/meta-boxes/marketgarden-contact.php:56
+#: parts/meta-boxes/salepoint-contact.php:57
+msgid "Secondary phone"
+msgstr ""
+
+#: parts/meta-boxes/marketgarden-contact.php:62
+#: parts/meta-boxes/salepoint-contact.php:63
+msgid "Mobile"
+msgstr ""
+
+#: parts/meta-boxes/marketgarden-contact.php:68
+msgid "Web"
+msgstr ""
+
+#: parts/meta-boxes/marketgarden-desc.php:10
+msgid "Subtitle/slogan"
+msgstr ""
+
+#: parts/meta-boxes/marketgarden-desc.php:11
+msgid "Enter a subtitle or slogan of the sale point"
+msgstr ""
+
+#: parts/meta-boxes/marketgarden-desc.php:20
+#: parts/meta-boxes/salepoint-desc.php:20
+msgid "Description"
+msgstr ""
+
+#: parts/meta-boxes/marketgarden-desc.php:21
+msgid "Enter a description for the sale point"
+msgstr ""
+
+#: parts/meta-boxes/marketgarden-desc.php:40
+msgid "Products"
+msgstr ""
+
+#: parts/meta-boxes/marketgarden-desc.php:41
+msgid "Enter the products are selling in your market garden"
+msgstr ""
+
+#: parts/meta-boxes/marketgarden-desc.php:43
+msgid "Choose products"
+msgstr ""
+
+#: parts/meta-boxes/marketgarden-salepoints.php:13
+msgid "Sale point"
+msgstr ""
+
+#: parts/meta-boxes/marketgarden-salepoints.php:14
+msgid "Enter the sale points of your market garden"
+msgstr ""
+
+#: parts/meta-boxes/salepoint-contact.php:39
+msgid "Another"
+msgstr ""
+
+#: parts/meta-boxes/salepoint-desc.php:10
+msgid "Subtitle/Slogan"
+msgstr ""
+
+#: parts/meta-boxes/salepoint-desc.php:11
+msgid "Enter a subtitle or slogan for de market garden"
+msgstr ""
+
+#: parts/meta-boxes/salepoint-desc.php:21
+msgid "Enter a description for the market garden"
+msgstr ""
+
+#: parts/meta-boxes/salepoint-timetable.php:11
+msgid "Enter the start time"
+msgstr ""
+
+#: parts/meta-boxes/salepoint-timetable.php:16
+msgid "Enter the end time"
+msgstr ""
+
+#: parts/meta-boxes/salepoint-timetable.php:22
+msgid "Days of the week"
+msgstr ""
+
+#: parts/meta-boxes/salepoint-timetable.php:26
+msgid "Monday"
+msgstr ""
+
+#: parts/meta-boxes/salepoint-timetable.php:27
+msgid "Tuesday"
+msgstr ""
+
+#: parts/meta-boxes/salepoint-timetable.php:28
+msgid "Wednesday"
+msgstr ""
+
+#: parts/meta-boxes/salepoint-timetable.php:29
+msgid "Thursday"
+msgstr ""
+
+#: parts/meta-boxes/salepoint-timetable.php:30
+msgid "Friday"
+msgstr ""
+
+#: parts/meta-boxes/salepoint-timetable.php:31
+msgid "Saturday"
+msgstr ""
+
+#: parts/meta-boxes/salepoint-timetable.php:32
+msgid "Sunday"
+msgstr ""
+
+#: parts/meta-boxes/salepoint-timetable.php:39
+msgid "Comment"
+msgstr ""
+
+#: parts/meta-boxes/salepoint-timetable.php:40
+msgid "Add any comment to the timetable."
+msgstr ""
+
+#: xarxeta-marketgardens.php:30
+msgid "Market gardens"
+msgstr ""
+
+#: xarxeta-marketgardens.php:62
+msgid "Sale points"
+msgstr ""
+
+#: xarxeta-marketgardens.php:65
+msgid "salepointxarxeta-marketgardens"
+msgstr ""
