@@ -2,6 +2,7 @@
 /*
 Title: Punt de venda
 Post Type: salepoint
+Order: 0
 */
 
 piklist('field', array(

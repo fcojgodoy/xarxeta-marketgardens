@@ -17,8 +17,8 @@
  * Call to Piklist Checker
  *
  */
-add_action('init', 'my_init_function');
-function my_init_function(){
+add_action('init', 'piklist_checker_function');
+function piklist_checker_function(){
   if(is_admin()){
    include_once('piklist-checker/class-piklist-checker.php');
 
@@ -88,50 +88,60 @@ function marketgarden_post_type($post_types)
       ,'author'
       ,'revisions'
     )
-    // ,'hide_meta_box' => array(
-    //   'slug'
-    //   ,'author'
-    //   ,'comments'
-    //   ,'commentstatus'
-    // )
   );
 
   return $post_types;
 
 }
 
-add_action( 'init', 'create_sp_city_taxonomy' );
 
-function create_sp_city_taxonomy() {
-	register_taxonomy(
-		'sp-city-tax',
-		'salepoint',
-		array(
-			'label' => __( 'Cities' ),
-			'rewrite' => array( 'slug' => 'ciutats' ),
-			'hierarchical' => true,
-		)
-	);
+/*
+ * Registering Salepoint's city taxonomy
+ *
+ */
+add_filter('piklist_taxonomies', 'create_sp_city_taxonomy');
+function create_sp_city_taxonomy ( $taxonomies ) {
+   $taxonomies [] = array (
+      'post_type' => 'salepoint'
+      ,'name' => 'sp-city-tax'
+      ,'show_admin_column' => true
+      ,'configuration' => array(
+        'hierarchical' => true
+        ,'labels' => piklist('taxonomy_labels', 'City')
+        ,'hide_meta_box' => true
+        ,'show_ui' => true
+        ,'query_var' => true
+        ,'rewrite' => array(
+          'slug' => 'ciutats'
+        )
+      )
+    );
+  return $taxonomies;
 }
 
-//   add_filter('piklist_taxonomies', 'demo_type_tax');
-//   function demo_type_tax($taxonomies) {
-//      $taxonomies[] = array(
-//         'post_type' => 'salepoint'
-//         ,'name' => 'city'
-//         // ,'show_admin_column' => true
-//         ,'configuration' => array(
-//           'labels' => piklist('City', 'xarxeta-marketgardens')
-//           // 'hierarchical' => true
-//           // ,'hide_meta_box' => true
-//           // ,'show_ui' => true
-//           // ,'query_var' => true
-//           ,'rewrite' => array(
-//             'slug' => 'ciutats'
-//           )
-//         )
-//       );
-//     return $taxonomies;
-// }
+
+/*
+ * Registering Salepoint's product taxonomy
+ *
+ */
+add_filter('piklist_taxonomies', 'create_sp_product_taxonomy');
+function create_sp_product_taxonomy ( $taxonomies ) {
+   $taxonomies [] = array (
+      'post_type' => 'salepoint'
+      ,'name' => 'sp-product-tax'
+      ,'show_admin_column' => true
+      ,'configuration' => array(
+        'hierarchical' => true
+        ,'labels' => piklist('taxonomy_labels', 'Product')
+        ,'hide_meta_box' => true
+        ,'show_ui' => true
+        ,'query_var' => true
+        ,'rewrite' => array(
+          'slug' => 'productes'
+        )
+      )
+    );
+  return $taxonomies;
+}
 
 ?>

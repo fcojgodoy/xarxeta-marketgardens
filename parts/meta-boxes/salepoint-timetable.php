@@ -2,7 +2,7 @@
 /*
 Title: L'horari
 Post Type: salepoint
-Order: 30
+Order: 2
 */
 
 piklist('field', array(

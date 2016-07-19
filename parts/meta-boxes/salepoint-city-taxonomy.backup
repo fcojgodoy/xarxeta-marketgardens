@@ -1,0 +1,28 @@
+<?php
+/*
+Title: Ciutat
+Post Type: salepoint
+Order: 3
+*/
+// 
+// piklist('field', array(
+//   'type' => 'select'
+//   ,'scope' => 'taxonomy'
+//   ,'field' => 'sp-city-tax'
+//   ,'label' => 'Categories'
+//   ,'description' => 'Terms will appear when they are added to this taxonomy.'
+//   ,'choices' => array(
+//       '' => 'Choose Term'
+//     )
+//     + piklist(get_terms(array(
+//       'taxonomy' => 'sp-city-tax'
+//       ,'hide_empty' => false
+//     ))
+//     ,array(
+//       'term_id'
+//       ,'name'
+//     )
+//   )
+// ));
+//
+//  ?>

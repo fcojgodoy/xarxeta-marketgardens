@@ -2,7 +2,7 @@
 /*
 Title: Contacte
 Post Type: salepoint
-Order: 20
+Order: 1
 */
 
 
@@ -23,19 +23,14 @@ piklist('field', array(
       ,'label' => __('PO Box, Suite, etc.', 'xarxeta-marketgardens')
       ,'columns' => 2
     )
-    // ,array(
-    //   'type' => 'text'
-    //   ,'field' => 'sp_city'
-    //   ,'label' => __('City', 'xarxeta-marketgardens')
-    //   ,'columns' => 5
-    // )
-    ,array(
+    , array(
       'type' => 'select'
       ,'scope' => 'taxonomy'
-      ,'field' => 'category'
-      ,'label' => __('City', 'xarxeta-marketgardens')
+      ,'field' => 'sp-city-tax'
+      ,'label' =>  __('City', 'xarxeta-marketgardens')
+      ,'description' => 'Terms will appear when they are added to this taxonomy.'
       ,'choices' => array(
-          '' => __('Choose city', 'xarxeta-marketgardens')
+          '' => 'Choose Term'
         )
         + piklist(get_terms(array(
           'taxonomy' => 'sp-city-tax'
