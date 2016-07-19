@@ -1,6 +1,6 @@
 <?php
 /*
-Title: Ciutat
+Title: Productes
 Post Type: salepoint
 Order: 4
 */

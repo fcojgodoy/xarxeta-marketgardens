@@ -5,8 +5,8 @@ msgstr ""
 "Project-Id-Version: Xarxeta Marketgardens 0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/xarxeta-"
 "marketgardens\n"
-"POT-Creation-Date: 2016-06-27 22:44+0200\n"
-"PO-Revision-Date: 2016-06-27 22:49+0200\n"
+"POT-Creation-Date: 2016-07-19 23:19+0200\n"
+"PO-Revision-Date: 2016-07-19 23:19+0200\n"
 "Last-Translator: Fco. J. Godoy <francisco.godoy@openmailbox.org>\n"
 "Language-Team: \n"
 "Language: ca\n"
@@ -23,7 +23,7 @@ msgstr ""
 "X-Poedit-SearchPath-3: parts\n"
 
 #: parts/meta-boxes/marketgarden-contact.php:9
-#: parts/meta-boxes/salepoint-contact.php:9
+#: parts/meta-boxes/salepoint-contact.php:11
 msgid "Address"
 msgstr "Adreça"
 
@@ -32,42 +32,42 @@ msgid "Enter your address"
 msgstr "Introdueix la teva adreça"
 
 #: parts/meta-boxes/marketgarden-contact.php:15
-#: parts/meta-boxes/salepoint-contact.php:15
+#: parts/meta-boxes/salepoint-contact.php:17
 msgid "Street Address"
 msgstr "Carrer"
 
 #: parts/meta-boxes/marketgarden-contact.php:21
-#: parts/meta-boxes/salepoint-contact.php:21
+#: parts/meta-boxes/salepoint-contact.php:23
 msgid "PO Box, Suite, etc."
 msgstr "Numero"
 
 #: parts/meta-boxes/marketgarden-contact.php:27
-#: parts/meta-boxes/salepoint-contact.php:27
+#: parts/meta-boxes/salepoint-contact.php:30
 msgid "City"
 msgstr "Ciutat"
 
 #: parts/meta-boxes/marketgarden-contact.php:33
-#: parts/meta-boxes/salepoint-contact.php:33
+#: parts/meta-boxes/salepoint-contact.php:48
 msgid "Region"
 msgstr "Regió"
 
 #: parts/meta-boxes/marketgarden-contact.php:44
-#: parts/meta-boxes/salepoint-contact.php:45
+#: parts/meta-boxes/salepoint-contact.php:60
 msgid "Postal Code"
 msgstr "Codi postal"
 
 #: parts/meta-boxes/marketgarden-contact.php:50
-#: parts/meta-boxes/salepoint-contact.php:51
+#: parts/meta-boxes/salepoint-contact.php:66
 msgid "Phone"
 msgstr "Telèfon"
 
 #: parts/meta-boxes/marketgarden-contact.php:56
-#: parts/meta-boxes/salepoint-contact.php:57
+#: parts/meta-boxes/salepoint-contact.php:72
 msgid "Secondary phone"
 msgstr "Telèfon secundari"
 
 #: parts/meta-boxes/marketgarden-contact.php:62
-#: parts/meta-boxes/salepoint-contact.php:63
+#: parts/meta-boxes/salepoint-contact.php:78
 msgid "Mobile"
 msgstr "Mòbil"
 
@@ -131,29 +131,41 @@ msgstr "Punt de venda"
 msgid "Enter the sale points of your market garden"
 msgstr "Introdueix els punts de venda de la teva horta"
 
-#: parts/meta-boxes/salepoint-contact.php:10
+#: parts/meta-boxes/salepoint-contact.php:12
 msgid "The address of the point of sale"
 msgstr "L'adreça del punt de venda"
 
-#: parts/meta-boxes/salepoint-contact.php:39
+#: parts/meta-boxes/salepoint-contact.php:32
+msgid "Choose city"
+msgstr "Selecciona una ciutat"
+
+#: parts/meta-boxes/salepoint-contact.php:54
 msgid "Another"
 msgstr "Altre"
 
-#: parts/meta-boxes/salepoint-desc.php:10
+#: parts/meta-boxes/salepoint-desc.php:11
 msgid "Subtitle/Slogan"
 msgstr "Subtítol / eslógan"
 
-#: parts/meta-boxes/salepoint-desc.php:11
+#: parts/meta-boxes/salepoint-desc.php:12
 msgid "Enter a subtitle or slogan for de sale point"
 msgstr "Introdueix el subtitol o eslógan de el punt de venda"
 
-#: parts/meta-boxes/salepoint-desc.php:20
+#: parts/meta-boxes/salepoint-desc.php:21
 msgid "Description"
 msgstr "Descripciò"
 
-#: parts/meta-boxes/salepoint-desc.php:21
+#: parts/meta-boxes/salepoint-desc.php:22
 msgid "Enter a description for the sale point"
 msgstr "Introdueix una descripciò per el punt de venda"
+
+#: parts/meta-boxes/salepoint-products.php:12 xarxeta-marketgardens.php:140
+msgid "Products"
+msgstr "Productes"
+
+#: parts/meta-boxes/salepoint-products.php:13
+msgid "Select the products that can be found in this salepoint"
+msgstr "Seleccionar els productes que es poden trobar en aquest punt de venda"
 
 #: parts/meta-boxes/salepoint-timetable.php:11
 msgid "Enter the start time"
@@ -203,22 +215,60 @@ msgstr "Comentari"
 msgid "Add any comment to the timetable."
 msgstr "Afegeix qualsevol comentari a l'horari"
 
-#: xarxeta-marketgardens.php:30
+#: piklist-checker/class-piklist-checker.php:128
+msgid "Your theme requires PIKLIST to work properly."
+msgstr "El teu  tema requereix PIKLIST per treballi pròpiament."
+
+#: piklist-checker/class-piklist-checker.php:138
+msgid "The following plugin(s) require PIKLIST, and have been deactivated:"
+msgstr "La següent plugin(s) requereixen PIKLIST i han estat desactivats:"
+
+#: piklist-checker/class-piklist-checker.php:154
+msgid "You can:"
+msgstr "Podeu:"
+
+#: piklist-checker/class-piklist-checker.php:167
+msgid "Activate Piklist for this site"
+msgstr "Activar Piklist per a aquest lloc"
+
+#: piklist-checker/class-piklist-checker.php:174
+msgid "Network Activate Piklist for all sites."
+msgstr ""
+
+#: piklist-checker/class-piklist-checker.php:181
+msgid "Install Piklist"
+msgstr "Instal·lar Piklist"
+
+#: piklist-checker/class-piklist-checker.php:188
+#, php-format
+msgid "%1$s %2$sDismiss this message."
+msgstr "%1$s %2$sAcomiadar aquest missatge."
+
+#: piklist-checker/class-piklist-checker.php:192
+#, php-format
+msgid "%1$s %2$sChange your theme."
+msgstr "%1$s %2$sCanviar el teu tema."
+
+#: xarxeta-marketgardens.php:45
 msgid "Market gardens"
 msgstr "Hortes"
 
-#: xarxeta-marketgardens.php:62
+#: xarxeta-marketgardens.php:77
 msgid "Sale points"
 msgstr "Punts de venda"
+
+#: xarxeta-marketgardens.php:115
+msgid "Cities"
+msgstr "Ciutates"
+
+#~ msgid "Enter a new Sale Point title"
+#~ msgstr "Introdueix el titol del punt de venda"
 
 #~ msgid "Our postal data"
 #~ msgstr "La adreça"
 
 #~ msgid "Enter a subtitle or slogan for de market garden"
 #~ msgstr "Introdueix el subtitol o eslógan de la teva horta"
-
-#~ msgid "Products"
-#~ msgstr "Productes"
 
 #~ msgid "Enter a subtitle or slogan of the sale point"
 #~ msgstr "Introdueix el subtitol o eslógan  del punt de venda"

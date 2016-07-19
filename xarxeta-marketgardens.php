@@ -46,7 +46,7 @@ function marketgarden_post_type($post_types)
     ,'public' => true
     ,'has_archive' => true
     ,'rewrite' => array(
-      'slug' => 'hortes' // FIXME: poner en inglés y ver cómo traducir: https://wordpress.org/support/topic/translate-custom-post-type-slug || Polylang con plugin con estrella en Github
+      'slug' => 'hortes'
     )
     ,'menu_icon' => 'dashicons-carrot'
     ,'supports' => array(
@@ -55,13 +55,11 @@ function marketgarden_post_type($post_types)
       ,'revisions'
       ,'thumbnail'
     )
-    // ,'hide_meta_box' => array(
-    //   'slug'
-    //   ,'author'
-    //   ,'revisions'
-    //   ,'comments'
-    //   ,'commentstatus'
-    // )
+    ,'hide_meta_box' => array(
+      'slug'
+      ,'author'
+      ,'revisions'
+    )
   );
 
   return $post_types;
@@ -77,14 +75,21 @@ function marketgarden_post_type($post_types)
  {
   $post_types['salepoint'] = array(
     'label' => __('Sale points', 'xarxeta-marketgardens')
+    ,'menu_icon' => 'dashicons-store'
     ,'public' => true
     ,'has_archive' => true
     ,'rewrite' => array(
       'slug' => 'punts-de-venda'
     )
-    ,'menu_icon' => 'dashicons-store'
+    ,'capability_type' => 'post'
     ,'supports' => array(
       'title'
+      ,'author'
+      ,'revisions'
+      ,'thumbnail'
+    )
+    ,'hide_meta_box' => array(
+      'slug'
       ,'author'
       ,'revisions'
     )
@@ -107,7 +112,7 @@ function create_sp_city_taxonomy ( $taxonomies ) {
       ,'show_admin_column' => true
       ,'configuration' => array(
         'hierarchical' => true
-        ,'labels' => piklist('taxonomy_labels', 'City')
+        ,'label' => __('Cities', 'xarxeta-marketgardens')
         ,'hide_meta_box' => true
         ,'show_ui' => true
         ,'query_var' => true
@@ -132,7 +137,7 @@ function create_sp_product_taxonomy ( $taxonomies ) {
       ,'show_admin_column' => true
       ,'configuration' => array(
         'hierarchical' => true
-        ,'labels' => piklist('taxonomy_labels', 'Product')
+        ,'label' => __('Products', 'xarxeta-marketgardens')
         ,'hide_meta_box' => true
         ,'show_ui' => true
         ,'query_var' => true

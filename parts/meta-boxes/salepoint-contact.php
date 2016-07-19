@@ -28,9 +28,8 @@ piklist('field', array(
       ,'scope' => 'taxonomy'
       ,'field' => 'sp-city-tax'
       ,'label' =>  __('City', 'xarxeta-marketgardens')
-      ,'description' => 'Terms will appear when they are added to this taxonomy.'
       ,'choices' => array(
-          '' => 'Choose Term'
+          '' => __('Choose city', 'xarxeta-marketgardens')
         )
         + piklist(get_terms(array(
           'taxonomy' => 'sp-city-tax'
